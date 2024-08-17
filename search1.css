@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=282&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    max-width: 400px;
+    width: 100%;
+}
+.box .search-bar{
+    position: relative;
+    height: 50px;
+    max-width: 50px;
+    margin: auto;
+    box-shadow:none;
+    border-radius: 25px;
+    transition: all 0.8s ease;
+}
+#check:checked ~ .search-bar{
+    max-width: 380px;
+    margin-right: 110px;
+}
+.search-bar input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.search-bar .material-icons{
+    position: absolute;
+    right:-2px;
+    top: 0;
+    width: 50px;
+    background: #fff;
+    line-height: 50px;
+    text-align: center;
+    color: #0892d0;
+    font-size: 28px;
+    border-radius: 25px;
+    margin-right: 106px;
+}
+#check:checked ~ .material-icons{
+    background: black;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    margin-left: 110px;
+}
+#check{
+    display: none;
+}
+.btn{
+    margin-top:250px;
+    width: 200px;
+    margin-right: 50px;
+    height: 50px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    background:linear-gradient(#fff);
+    border-radius: 17px 20px;
+    color: #0892d0;
+    border: none;
+    box-shadow: 0 5px 10px rgba(225,225,225,0.1);
+    margin-left: -280px;
+}
+.btn:hover{
+    box-shadow: 10px 5px black;
+    transition: all 0.4s ease;
+}
+#fixedbtn{
+    position: fixed;
+    bottom: 50px;
+    right: 620px;
+
+}
+#fixedtbl{
+    position: fixed;
+    bottom:20px;
+    left: 70%;
+}
+
+.iimg{
+    width: 520px;
+    border-radius: 15px 12px 23px;
+    padding-top: 350px;
+    padding-left: 20%;
+}
+table th,td{
+    border: 1px solid white;
+    color: #fff;
+    padding-right: 1px;
+    padding-bottom: 5px;
+}
+table{
+    padding-left: 20px;
+    padding-bottom: 350px;
+}
